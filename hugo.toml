@@ -1,8 +1,8 @@
 baseURL = "http://example.org/"
-defaultContentLanguage = "en"
-languageCode = "en"
+defaultContentLanguage = "zh"
+languageCode = "zh"
 
-title = "My New Hugo Site"
+title = "清  余"
 
 theme = "gokarna"
 
