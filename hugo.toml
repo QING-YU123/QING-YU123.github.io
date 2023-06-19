@@ -23,7 +23,7 @@ enableRobotsTXT = true
     post = ""
 
     # Display name
-    name = "Qingyu"
+    name = "文章"
 
     # Weights are used to determine the ordering
     weight = 1
