@@ -23,7 +23,7 @@ enableRobotsTXT = true
     post = ""
 
     # Display name
-    name = "Posts"
+    name = "Qingyu"
 
     # Weights are used to determine the ordering
     weight = 1
@@ -40,4 +40,4 @@ enableRobotsTXT = true
     weight = 3
     
     # We use feather-icons: https://feathericons.com/
-    pre = "<span data-feather='github'></span>"
+    pre = "<span data-feather='github'></span>" 
