@@ -1,4 +1,24 @@
 baseURL = 'http://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
+languageCode = 'zh-us'
+title = '鲭 鱼 的 博 客'
 theme = 'hugo-theme-stack'
+
+DefaultContentLanguage = "zh-cn"
+
+
+
+[menu]
+[[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 10
+    identifier = "home"
+    [menu.main.params]
+        icon = "home"
+        newTab = true
+
+description = "鲭鱼的博客"
+mainSections = ["post", "zh-cn", "zh-us"]
+featuredImageField = "./resources/_gen/images/01.png"
+
+favicon = "/favicon.ico"
