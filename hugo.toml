@@ -27,7 +27,7 @@ subtitle = "燕山大学 软件工程专业  21级就读"
 [params.sidebar.avatar]
 enabled = true
 local = true
-src = "img/header.png"
+src = "imgs/header.png"
 
 [params.article]
 math = false
