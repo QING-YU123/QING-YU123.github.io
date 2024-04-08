@@ -13,7 +13,24 @@
 <meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Example Tag' /><meta property='article:published_time' content='2023-08-03T17:53:06&#43;08:00'/><meta property='article:modified_time' content='2023-08-03T17:53:06&#43;08:00'/><meta property='og:image' content='https://source.unsplash.com/800x600/?example' />
 <meta name="twitter:title" content="设计模式">
 <meta name="twitter:description" content="在此处进行详细的学习，并且验证和修复以及拓展先前建立的结构 详细的学习笔记（逻辑，结构，技术） 基本的知识验证实践 本阶段主要以书籍（文档）学习为主，按照在预习阶段得到的学习模式进行，并且对其进行修正 以验证完全，提交三项笔记为结束点 #\r设计模式单解\r#\r策略模式\r动机：策略模式是使用里氏替换来替换ifelse结构，达到对ifelse可拓展的需求 原则：对ifelse进行拓展 package designmodel; /** * @author 73214 */ /** * 静态部分 */ public class Strategy { public static void main(String[] args) { new PaymentService(new taoBaoPayment(), 100); new PaymentService(new weiXinPayment(), 1000); } } interface PaymentStrategy { public void payment(int money); } class PaymentService { public PaymentService(PaymentStrategy paymentStrategy, int money) { paymentStrategy.payment(money); } } /** * 动态 */ class taoBaoPayment implements PaymentStrategy { @Override public void payment(int money) { System."><meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content='https://source.unsplash.com/800x600/?example' />
+    <meta name="twitter:image" content='https://source.unsplash.com/800x600/?example' /><style>
+     
+    :root {
+        --article-font-family: "Merriweather", var(--base-font-family);
+    }
+</style>
+
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap";
+    
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+    
+        document.head.appendChild(customFont);
+    }());
+</script>
     </head>
     <body class="
     article-page
