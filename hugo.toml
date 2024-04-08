@@ -1,24 +1,98 @@
 baseURL = 'http://example.org/'
 languageCode = 'zh-us'
-title = '鲭 鱼 的 博 客'
+title = '清 余'
 theme = 'hugo-theme-stack'
 
 DefaultContentLanguage = "zh-cn"
 
 
+# 小部件
+[[widgets.homepage]]
+type = "search"
 
-[menu]
-[[menu.main]]
-    name = "Home"
-    url = "/"
-    weight = 10
-    identifier = "home"
-    [menu.main.params]
-        icon = "home"
-        newTab = true
+[[widgets.homepage]]
+type = "archives"
 
-description = "鲭鱼的博客"
-mainSections = ["post", "zh-cn", "zh-us"]
-featuredImageField = "./resources/_gen/images/01.png"
+[widgets.homepage.params]
+limit = 5
 
-favicon = "/favicon.ico"
+[[widgets.homepage]]
+type = "categories"
+
+[widgets.homepage.params]
+limit = 10
+
+[[widgets.homepage]]
+type = "tag-cloud"
+
+[widgets.homepage.params]
+limit = 10
+
+[[widgets.page]]
+type = "toc"
+
+[opengraph.twitter]
+site = ""
+card = "summary_large_image"
+
+[defaultImage.opengraph]
+enabled = false
+local = false
+src = ""
+
+[colorScheme]
+toggle = true
+default = "auto"
+
+[imageProcessing.cover]
+enabled = true
+
+[imageProcessing.content]
+enabled = true
+
+
+includeNewer = true
+threshold = 60
+toLower = false
+
+[[indices]]
+name = "tags"
+weight = 100
+
+[[indices]]
+name = "categories"
+weight = 200
+
+
+
+[goldmark.renderer]
+unsafe = true
+
+[tableOfContents]
+endLevel = 4
+ordered = true
+startLevel = 2
+
+[highlight]
+noClasses = false
+codeFences = true
+guessSyntax = true
+lineNoStart = 1
+lineNos = true
+lineNumbersInTable = true
+tabWidth = 4
+
+post = "/p/:slug/"
+page = "/:slug/"
+
+includeNewer = true
+threshold = 60
+toLower = false
+
+[[indices]]
+name = "tags"
+weight = 100
+
+[[indices]]
+name = "categories"
+weight = 200
